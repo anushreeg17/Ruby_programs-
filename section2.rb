@@ -87,5 +87,89 @@ x,y,z = 2,5,4
     puts "z is smallest"
   end 
 => x = 2 is smallest
+  
+  
+  #Find GCD of two numbers
+  
+  num1 = 10
+num2 = 15
+num3 = 21
+num4 = 14
+puts num1.gcd(num2)
+puts num3.gcd(num4)
+  
+ 
+ #Check whether String is Empty or Null
+ 
+  "".empty?
+=> true
+"hey good morning ".empty?
+=> false
+  
+  
+  #Calculate Sum of Natural numbers
+ 
+  def sum(num)
+ res=0
+ for i in 1..num
+    res=res+i
+ end
+p "the sum of #{num} number is #{res}"
+ end
+=> :sum
+sum(10)
+"the sum of 10 number is 55"
+  
+  
+  #Display Fibonacci Series
+ 
+ def fibonacci( n )
+     return  n  if n <= 1 
+     fibonacci( n - 1 ) + fibonacci( n - 2 )
+ end 
+=> :fibonacci
+ puts fibonacci( 10 )
+55
+=> nil
+  
+  
+ #Display Fibonacci Series
+ 
+ def fibonacci( n )
+     return  n  if n <= 1 
+    fibonacci( n - 1 ) + fibonacci( n - 2 )
+end 
+=> :fibonacci
+ puts fibonacci( 10 )
+55
+=> nil
+  
+  
+  #Display Alphabets(A-Z)
+  ('A'..'Z').to_a
+=> ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+  
+  
+  #Count the number of digits in an integer
+ 
+ def countdigits(num)
+temp=num
+ count=0
+ while(temp>0)
+     count=count+1
+     temp=temp/10
+ end
+ puts "#{num} has #{count}   digits"
+ end
+=> :countdigits
+ countdigits(123451)
+1231 has 4  digits
+=> nil
+  
+  
+  
+  
+  
+  
 
 
